@@ -2,6 +2,9 @@
 
 Sign using X.590 JSS, using example Ed25519 private key from the standard (details follow):
 
+Requirements:
+ 1. canonicaljson - `pip install canonicaljson`
+
 Restrictions:
  1. There may be zero or one signature object in the input JSON
  2. The signature (if present) must be at the outermost level of the JSON object
