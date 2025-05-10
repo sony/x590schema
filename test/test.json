@@ -1,0 +1,121 @@
+{
+  "target": "x590signatures.json",
+  "tests": [
+    {
+      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "valid": true,
+      "data": {
+        "signatures": [
+          {
+            "hash_algorithm": "sha-256",
+            "algorithm": "XMSS-SHA2_10_256",
+            "value": "value123",
+            "public_key": "publicKey123"
+          }
+        ]
+      }
+    },
+    {
+      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "valid": true,
+      "data": {
+          "signatures": [
+          {
+            "hash_algorithm": "sha-256",
+            "algorithm": "XMSS-SHA2_10_256",
+            "value": "value123",
+            "public_cert_chain": ["publicKey123", "publicKey456"]
+          }
+        ]
+      }
+    },
+    {
+      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "valid": true,
+      "data": {
+        "signatures": [
+          {
+            "hash_algorithm": "sha-256",
+            "algorithm": "XMSS-SHA2_10_256",
+            "value": "value123",
+            "cert_url": "http://example.com/cert"
+          }
+        ]
+      }
+    },
+    {
+      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "valid": true,
+      "data": {
+        "signatures": [
+          {
+            "hash_algorithm": "sha-256",
+            "algorithm": "XMSS-SHA2_10_256",
+            "value": "value123",
+            "thumbprint": "thumbprint123"
+          }
+        ]
+      }
+    },
+    {
+      "description": "must have the mandatory three fields, plus must not have two  of the four oneOf fields",
+      "valid": false,
+      "data": {
+        "signatures": [
+          {
+            "hash_algorithm": "sha-256",
+            "algorithm": "XMSS-SHA2_10_256",
+            "value": "value123",
+            "cert_url": "http://example.com/cert",
+            "thumbprint": "thumbprint123"
+          } 
+        ]
+      }
+    },
+    {
+      "description": "must have the mandatory three fields, plus must not have two  of the four oneOf fields",
+      "valid": false,
+        "data": {
+          "signatures": [
+            {
+              "hash_algorithm": "sha-256",
+              "algorithm": "XMSS-SHA2_10_256",
+              "value": "value123",
+              "public_cert_chain": ["publicKey123", "publicKey456"],
+              "thumbprint": "thumbprint123"
+            }
+          ]
+        } 
+      },
+      {
+      "description": "id must be UUID format",
+      "valid": true,
+      "data": {
+        "signatures": [
+          {
+            "id": "12345678-1234-1234-1234-123456789012",
+            "hash_algorithm": "sha-256",
+            "algorithm": "XMSS-SHA2_10_256",
+            "value": "value123",
+            "public_cert_chain": ["publicKey123", "publicKey456"]
+          }
+        ]
+      }
+    },
+    {
+      "description": "id must be UUID format",
+      "valid": false,
+      "data": {
+        "signatures": [
+          {
+            "id": "12345678",
+            "hash_algorithm": "sha-256",
+            "algorithm": "XMSS-SHA2_10_256",
+            "value": "value123",
+            "cert_url": "http://example.com/cert"
+          }
+        ] 
+      }      
+    }
+  ] 
+}
