@@ -4,6 +4,7 @@ Sign using X.590 JSS, using example Ed25519 private key from the standard (detai
 
 Requirements:
  1. canonicaljson - `pip install canonicaljson`
+ 2. cryptography - `pip install cryptography`
 
 Restrictions:
  1. There may be zero or one signature object in the input JSON
