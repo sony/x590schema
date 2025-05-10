@@ -1,0 +1,15 @@
+{
+    "statement": "Hello signed world!",
+    "otherProperties": [
+        "home",
+        "food"
+    ],
+    "signatures": [
+        {
+            "hash_algorithm": "sha-256",
+            "algorithm": "Ed25519",
+            "public_key": "MCowBQYDK2VwAyEAubMonBfU9pvIbj5RCiWQLD45Jvu6mKr+kQXjvjW8ZkU",
+            "value": "F1Sj4VcZlSt5GO3Bcu4izpCklj9DbKDNvc2Trpdznfqgv9HMPUGVtefMsHfTqel-dN20lUXsdoeD8PpVr1ssCg"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+	"statement": "Hello signed world!",
+	"otherProperties": [
+		"home",
+		"food"
+	],
+	"test": {
+		"test1": "test1",
+		"test2": "test2",
+		"signatures": [
+			{
+				"sign": "here",
+				"hash_algorithm": "sha-256",
+				"algorithm": "Ed25519",
+				"public_key": "MCowBQYDK2VwAyEAubMonBfU9pvIbj5RCiWQLD45Jvu6mKr+kQXjvjW8ZkU"
+			},
+			{
+				"hash_algorithm": "sha-256",
+				"algorithm": "Ed25519",
+				"public_key": "MCowBQYDK2VwAyEAubMonBfU9pvIbj5RCiWQLD45Jvu6mKr+kQXjvjW8ZkU"
+			}
+		]
+
+	},
+	"signatures": [
+		{
+			"hash_algorithm": "-- some hashing algorithm --",
+			"algorithm": "-- some signing algorithm --",
+			"public_key": "-- some public key --",
+			"value": "-- some existing digital signature --"
+		}
+	]
+}

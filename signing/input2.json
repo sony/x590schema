@@ -1,0 +1,7 @@
+{
+	"statement": "Hello signed world!",
+	"otherProperties": [
+		"home",
+		"food"
+	]
+}

@@ -1,0 +1,14 @@
+{
+    "name": {
+        "first": "John",
+        "last": "Doe"
+    },
+    "signatures": [
+        {
+            "hash_algorithm": "sha-256",
+            "algorithm": "Ed25519",
+            "public_key": "MCowBQYDK2VwAyEAubMonBfU9pvIbj5RCiWQLD45Jvu6mKr+kQXjvjW8ZkU",
+            "value": "CoRbqNeXGLWZ5q3c8KxSdKKbjuMUXzOUI_9ZHSL9qalZbbdEyVse4EURUtE_TaubCAMCPZIKTCEpvGGjwz1nBg"
+        }
+    ]
+}
