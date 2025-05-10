@@ -1,8 +1,8 @@
 {
-  "target": "x590signatures.json",
+  "target": "x590schema.json",
   "tests": [
     {
-      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "description": "1/must have the mandatory three fields, plus one of the four oneOf fields",
       "valid": true,
       "data": {
         "signatures": [
@@ -16,7 +16,7 @@
       }
     },
     {
-      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "description": "2/must have the mandatory three fields, plus one of the four oneOf fields",
       "valid": true,
       "data": {
           "signatures": [
@@ -30,7 +30,7 @@
       }
     },
     {
-      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "description": "3/must have the mandatory three fields, plus one of the four oneOf fields",
       "valid": true,
       "data": {
         "signatures": [
@@ -44,7 +44,7 @@
       }
     },
     {
-      "description": "must have the mandatory three fields, plus one of the four oneOf fields",
+      "description": "4/must have the mandatory three fields, plus one of the four oneOf fields",
       "valid": true,
       "data": {
         "signatures": [
@@ -58,7 +58,7 @@
       }
     },
     {
-      "description": "must have the mandatory three fields, plus must not have two  of the four oneOf fields",
+      "description": "5/must have the mandatory three fields, plus must not have two  of the four oneOf fields",
       "valid": false,
       "data": {
         "signatures": [
@@ -73,7 +73,7 @@
       }
     },
     {
-      "description": "must have the mandatory three fields, plus must not have two  of the four oneOf fields",
+      "description": "6/must have the mandatory three fields, plus must not have two  of the four oneOf fields",
       "valid": false,
         "data": {
           "signatures": [
@@ -88,7 +88,7 @@
         } 
       },
       {
-      "description": "id must be UUID format",
+      "description": "7/id must be UUID format",
       "valid": true,
       "data": {
         "signatures": [
@@ -103,7 +103,7 @@
       }
     },
     {
-      "description": "id must be UUID format",
+      "description": "8/id must be UUID format",
       "valid": false,
       "data": {
         "signatures": [
