@@ -7,7 +7,7 @@ Requirements:
  2. cryptography - `pip install cryptography`
 
 Restrictions:
- 1. There may be zero or one signature object in the input JSON
+ 1. There may be zero or one signature objects in the input JSON
  2. The signature (if present) must be at the outermost level of the JSON object
  3. The X.590 example public/private key pair is hard-coded.
 
