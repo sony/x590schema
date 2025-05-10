@@ -1,0 +1,32 @@
+{
+  "$schema": "./example-subschema.json",
+  "name": {
+    "first": "John",
+    "last": "Doe"
+  },
+  "signatures": [
+    {
+      "hash_algorithm": "sha-256",
+      "algorithm": "Ed25519",
+      "value": "LQC21RFc3RCatZzmpR_G0_26KtdypmZAf97GKX8qVeFxsjk70axxB0xWf1OZJoSgIPeIZTAy9+GhdRIhgZUqDQ",
+      "public_key": "MCowBQYDK2VwAyEAN3RcUVBEsI9zDzAlOkRR3COHLY7jSkIV7b61nh5HTgI",
+      "fingerprint": "screw"
+    },
+    {
+      "hash_algorithm": "sha-256",
+      "algorithm": "XMSS-SHA2_10_256",
+      "value": "value123",
+      "cert_url": "http://example.com/cert",
+      "signature": {
+        "role": "notary",
+        "name": "Carol Lombardi-Jones",
+        "timestamp": "2023-01-30T13:58:42Z",
+        "hash_algorithm": "-- some hashing algorithm --",
+        "algorithm": "-- some signing algorithm --",
+        "public_key": "-- some other public key --",
+        "fingerprint": "screw",
+        "value": "-- The notary's digital signature --"
+      }
+    } 
+  ]
+}

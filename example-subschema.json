@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "example-subschema.json",
+  "title": "JSS Schema Sample Usage",
+  
+  "properties": {
+    "name": {
+      "type": "object",
+      "properties": {
+        "first": {
+          "type": "string",
+          "$comment": "First name of the person"
+        },
+        "last": {
+          "type": "string",
+          "$comment": "Last name of the person"
+        }
+      },
+      "required": [ "first", "last" ]
+    }
+  },
+  "required": [ "name", "signatures" ],
+  "$ref": "x590signatures.json"
+}
