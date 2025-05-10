@@ -16,7 +16,7 @@ Explanation:
 
 ### Option 1:
 
-As a sibling to "properties", add `$ref` to `[location of x590signatures.json]`.  The `$ref`  will expand to an array of X.590 signature objects, see the example below.
+As a sibling to "properties", add `$ref` to `[location of x590schema.json]`.  The `$ref`  will expand to an array of X.590 signature objects, see the example below.
 
     {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -64,7 +64,7 @@ Note that multiple signatures can be attached (via the array), and signatures ca
 
 ### Option 2: 
 
-Instead of using `x509signatures.json` to insert properties/signatures/array of signatures, do it directly in the source code:
+Instead of using `$ref` to `x509schema.json` as a sibling to `properties`, to insert properties/signatures/array of signatures, do it directly in the source code:
 
     {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -88,7 +88,7 @@ Instead of using `x509signatures.json` to insert properties/signatures/array of 
             "signatures": {
                 "type": "array",
                 "items": {
-                    "$ref": "x590schema.json"
+                    "$ref": "x590schema.json/#/$defs/signature"
                 }
             }
         },

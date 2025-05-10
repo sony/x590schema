@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "example-subschema.json",
   "title": "JSS Schema Sample Usage",
-  
+  "description": "example-subschema.json",
   "properties": {
     "name": {
       "type": "object",
@@ -16,9 +16,11 @@
           "$comment": "Last name of the person"
         }
       },
+      "$ref": "x590schema.json",
       "required": [ "first", "last" ]
     }
   },
-  "required": [ "name", "signatures" ],
-  "$ref": "x590signatures.json"
+  "$ref": "x590schema.json",
+
+  "required": [ "name", "signatures" ]
 }

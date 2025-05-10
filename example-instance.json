@@ -2,7 +2,15 @@
   "$schema": "./example-subschema.json",
   "name": {
     "first": "John",
-    "last": "Doe"
+    "last": "Doe",
+    "signatures": [
+      {
+        "hash_algorithm": "sha-256",
+        "algorithm": "Ed25519",
+        "value": "LQC21RFc3RCatZzmpR_G0_26KtdypmZAf97GKX8qVeFxsjk70axxB0xWf1OZJoSgIPeIZTAy9+GhdRIhgZUqDQ",
+        "public_key": "MCowBQYDK2VwAyEAN3RcUVBEsI9zDzAlOkRR3COHLY7jSkIV7b61nh5HTgI",
+        "fingerprint": "screw"
+      }]
   },
   "signatures": [
     {
