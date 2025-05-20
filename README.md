@@ -3,6 +3,12 @@ A JSON Schema for X.590, the ITU-T standard for a _JSON Signature Scheme (JSS)_.
 
 This version supports ITU-T X.590 (10/2023), which is available from ITU for free at https://www.itu.int/rec/T-REC-X.590-202310-I
 
+## This Repository
+This repository has 
+* a X.590 schema (see Usage below)
+* Support for a tool to verify the schema (e.g., when modifying it), which requires the tool from https://github.com/sourcemeta/jsonschema.  See `Makefile`.
+* A (simple) python tool to demonstrate signature generation, see the `signing` directory.
+
 ## About X.590
 From the X.590 Introduction:
 > This Recommendation introduces a method for digitally signing data expressed in the JavaScript object notation (JSON) [IETF RFC 8259] notation. For interoperability and security reasons this Recommendation requires JSON objects to be in the I-JSON [IETF RFC 7493] subset and uses the JSON canonicalization scheme (JCS) [IETF RFC 8785] for canonicalization. This method enables signed JSON objects to be kept in JSON format and is referred to as JSON signature scheme (JSS).
