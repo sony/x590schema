@@ -6,7 +6,7 @@ This version supports ITU-T X.590 (10/2023), which is available from ITU for fre
 ## This Repository
 This repository has 
 * a X.590 schema (see Usage below)
-* Support for a tool to verify the schema (e.g., when modifying it), which requires the tool from https://github.com/sourcemeta/jsonschema.  See `Makefile`.
+* Support for a tool to verify the schema (e.g., when modifying it), which requires the tool from https://github.com/sourcemeta/jsonschema.  See `Makefile`.  And thanks to Juan Cruz Viotti (https://github.com/jviotti) for assistance with the tool.
 * A (simple) python tool to demonstrate signature generation, see the `signing` directory.
 
 ## About X.590
